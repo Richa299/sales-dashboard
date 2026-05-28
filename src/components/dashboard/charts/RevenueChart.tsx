@@ -93,7 +93,7 @@ const RevenueChart = () => {
         </ResponsiveContainer>
       </div>
 
-      <div className="flex items-center justify-center gap-[40px] mt-[24px]">
+      <div className="flex items-center justify-center gap-[40px] !mt-[12px]">
         <LegendItem color="#0EA5E9" label="Online Sales" />
 
         <LegendItem color="#22C55E" label="Offline Sales" />

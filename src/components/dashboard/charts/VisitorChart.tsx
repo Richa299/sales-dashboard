@@ -79,7 +79,7 @@ const data = [
 
 const VisitorChart = () => {
   return (
-    <div className="w-full h-full bg-[#F8F9FA]">
+    <div className="w-full h-[50%] bg-[#F8F9FA]">
       <div className="w-full h-[220px]">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data}>
@@ -137,7 +137,7 @@ const VisitorChart = () => {
         </ResponsiveContainer>
       </div>
 
-      <div className="flex items-center gap-[24px] mb-[24px]">
+      <div className="flex items-center gap-[24px] !mt-[12px] !ml-[4.5rem]">
         <LegendItem color="#A700FF" label="Loyal Customers" />
 
         <LegendItem color="#EF4444" label="New Customers" />

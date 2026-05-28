@@ -40,7 +40,7 @@ const data = [
 
 const TargetReality = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-between">
+    <div className="w-full flex flex-col justify-evenly">
       <div className="w-full h-[190px]">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} barGap={8}>
@@ -72,15 +72,12 @@ const TargetReality = () => {
         </ResponsiveContainer>
       </div>
 
-      <div className="flex flex-col gap-[16px]">
+      <div className="flex flex-col gap-[10px] !mt-[1rem]">
         <div
           className="
             flex
             items-center
             justify-between
-
-            bg-[#F8FFF7]
-
             rounded-[14px]
 
             px-[16px]
@@ -88,7 +85,6 @@ const TargetReality = () => {
           "
         >
           <div className="flex items-center gap-[12px]">
-            {/* ICON */}
             <div
               className="
                 w-[36px]
@@ -109,7 +105,7 @@ const TargetReality = () => {
             <div>
               <p
                 className="
-                  text-[14px]
+                  text-[12px]
                   font-medium
                   text-[#151D48]
                 "
@@ -119,7 +115,7 @@ const TargetReality = () => {
 
               <span
                 className="
-                  text-[12px]
+                  text-[10px]
                   text-[#A3AED0]
                 "
               >
@@ -130,7 +126,7 @@ const TargetReality = () => {
 
           <h3
             className="
-              text-[20px]
+              text-[14px]
               font-semibold
               text-[#22C55E]
             "
@@ -145,7 +141,6 @@ const TargetReality = () => {
             items-center
             justify-between
 
-            bg-[#FFFBEA]
 
             rounded-[14px]
 
@@ -174,7 +169,7 @@ const TargetReality = () => {
             <div>
               <p
                 className="
-                  text-[14px]
+                  text-[12px]
                   font-medium
                   text-[#151D48]
                 "
@@ -184,7 +179,7 @@ const TargetReality = () => {
 
               <span
                 className="
-                  text-[12px]
+                  text-[10px]
                   text-[#A3AED0]
                 "
               >
@@ -195,7 +190,7 @@ const TargetReality = () => {
 
           <h3
             className="
-              text-[20px]
+              text-[14px]
               font-semibold
               text-[#F59E0B]
             "

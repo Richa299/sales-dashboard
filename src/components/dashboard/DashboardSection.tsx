@@ -26,15 +26,19 @@ const DashboardSection = ({
         border
         border-[#F5F5F7]
 
-        p-[24px]
+        !p-[24px]
       `}
     >
-      <div className="flex items-start justify-between mb-[24px]">
+      <div className="flex items-start justify-between !mb-[20px]">
         <div>
-          <h2 className="text-[24px] font-semibold text-[#151D48]">{title}</h2>
+          <h2 className="text-[20px] font-semibold text-[#05004E] font-['Poppins']">
+            {title}
+          </h2>
 
           {subtitle && (
-            <p className="text-[16px] text-[#737791] mt-[4px]">{subtitle}</p>
+            <p className="text-[16px] text-[#737791] mt-[4px] font-['Poppins']">
+              {subtitle}
+            </p>
           )}
         </div>
 

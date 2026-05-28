@@ -35,7 +35,7 @@ const data = [
 
 const VolumeChart = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-between">
+    <div className="w-full h-[90%] flex flex-col justify-evenly">
       <div className="w-full h-[190px]">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} barGap={16}>
@@ -63,7 +63,7 @@ const VolumeChart = () => {
           border-t
           border-[#F5F5F7]
 
-          pt-[20px]
+          !mt-[20px]
 
           flex
           items-center

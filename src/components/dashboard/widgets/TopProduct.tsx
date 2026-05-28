@@ -47,8 +47,8 @@ const TopProductsTable = () => {
         <span
           className="
             text-[13px]
-            font-medium
-            text-[#A3AED0]
+            font-normal
+            text-[#96A5B8]
           "
         >
           #
@@ -57,8 +57,8 @@ const TopProductsTable = () => {
         <span
           className="
             text-[13px]
-            font-medium
-            text-[#A3AED0]
+            font-normal
+            text-[#96A5B8]
           "
         >
           Name
@@ -67,8 +67,8 @@ const TopProductsTable = () => {
         <span
           className="
             text-[13px]
-            font-medium
-            text-[#A3AED0]
+            font-normal
+            text-[#96A5B8]
           "
         >
           Popularity
@@ -77,15 +77,15 @@ const TopProductsTable = () => {
         <span
           className="
             text-[13px]
-            font-medium
-            text-[#A3AED0]
+            font-normal
+            text-[#96A5B8]
           "
         >
           Sales
         </span>
       </div>
 
-      <div className="flex flex-col gap-[26px]">
+      <div className="flex flex-col gap-[26px] !mt-[1.5rem]">
         {products.map((product) => (
           <div
             key={product.id}
@@ -99,8 +99,8 @@ const TopProductsTable = () => {
             <span
               className="
                 text-[14px]
-                font-medium
-                text-[#737791]
+                font-normal
+                text-[#444A6D]
               "
             >
               {product.id}
@@ -109,8 +109,8 @@ const TopProductsTable = () => {
             <span
               className="
                 text-[14px]
-                font-medium
-                text-[#151D48]
+                font-normal
+                text-[#444A6D]
               "
             >
               {product.name}
@@ -118,8 +118,8 @@ const TopProductsTable = () => {
 
             <div
               className="
-                w-[120px]
-                h-[8px]
+                w-[180px]
+                h-[5px]
 
                 rounded-full
 
@@ -129,7 +129,7 @@ const TopProductsTable = () => {
               "
             >
               <div
-                className="h-full rounded-full"
+                className="h-full rounded-lg"
                 style={{
                   width: `${product.progress}%`,
                   backgroundColor: product.color,
@@ -142,7 +142,7 @@ const TopProductsTable = () => {
                 w-[56px]
                 h-[28px]
 
-                rounded-full
+                rounded-lg
                 border
 
                 flex

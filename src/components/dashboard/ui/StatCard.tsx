@@ -21,12 +21,11 @@ const StatCard = ({
         ${bgColor}
 
         w-[180px]
-        h-[187px]
+        h-[184px]
 
         rounded-[16px]
 
-        px-[18px]
-        py-[20px]
+        !p-[1.5rem]
       `}
     >
       <div
@@ -44,7 +43,7 @@ const StatCard = ({
 
           text-[#FFFFFF]
 
-          mb-[22px]
+          !mb-[15px]
         `}
       >
         {icon}
@@ -52,7 +51,7 @@ const StatCard = ({
 
       <h3
         className="
-          text-[34px]
+          text-[24px]
           font-bold
           text-[#151D48]
 
@@ -64,7 +63,7 @@ const StatCard = ({
 
       <p
         className="
-          text-[18px]
+          text-[16px]
           font-medium
           text-[#425166]
 
@@ -76,7 +75,7 @@ const StatCard = ({
 
       <span
         className="
-          text-[14px]
+          text-[12px]
           font-medium
           text-[#4079ED]
         "

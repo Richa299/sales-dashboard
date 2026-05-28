@@ -40,9 +40,9 @@ const data = [
 
 const SatisfactionChart = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-between">
+    <div className="w-full h-full flex flex-col justify-evenly">
       {/* CHART */}
-      <div className="w-full h-[220px]">
+      <div className="w-full h-[200px]">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={data}>
             <XAxis hide dataKey="month" />
@@ -104,9 +104,9 @@ const SatisfactionChart = () => {
 
           <h3
             className="
-              text-[22px]
+              text-[14px]
               font-semibold
-              text-[#151D48]
+              text-[#222B45]
             "
           >
             $3,004
@@ -129,9 +129,9 @@ const SatisfactionChart = () => {
 
           <h3
             className="
-              text-[22px]
+              text-[14px]
               font-semibold
-              text-[#151D48]
+              text-[#222B45]
             "
           >
             $4,504

@@ -7,16 +7,17 @@ import DashboardSection from "./DashboardSection";
 import SalesCards from "./widgets/SalesCard";
 import SalesMap from "./widgets/SalesMap";
 import TopProductsTable from "./widgets/TopProduct";
+import UsersTable from "./widgets/UsersTable";
 
 const DashboardContent = () => {
   return (
-    <div className="flex flex-col gap-[32px]">
+    <div className="flex flex-col gap-[32px] bg-red-500 !p-[1.5rem]">
       <section className="flex gap-[31px]">
         <DashboardSection
           title="Today's Sales"
           subtitle="Sales Summary"
           width="w-[877px]"
-          height="h-[348px]"
+          height="h-[340px]"
           //   action={<ExportButton />}
         >
           <SalesCards />
@@ -25,7 +26,7 @@ const DashboardContent = () => {
         <DashboardSection
           title="Visitor Insights"
           width="w-[591px]"
-          height="h-[348px]"
+          height="h-[340px]"
         >
           <VisitorChart />
         </DashboardSection>
@@ -35,7 +36,7 @@ const DashboardContent = () => {
         <DashboardSection
           title="Total Revenue"
           width="w-[645px]"
-          height="h-[351px]"
+          height="h-[380px]"
         >
           <RevenueChart />
         </DashboardSection>
@@ -43,7 +44,7 @@ const DashboardContent = () => {
         <DashboardSection
           title="Customer Satisfaction"
           width="w-[420px]"
-          height="h-[351px]"
+          height="h-[380px]"
         >
           <SatisfactionChart />
         </DashboardSection>
@@ -51,7 +52,7 @@ const DashboardContent = () => {
         <DashboardSection
           title="Target vs Reality"
           width="w-[371px]"
-          height="h-[351px]"
+          height="h-[380px]"
         >
           <TargetReality />
         </DashboardSection>
@@ -80,6 +81,16 @@ const DashboardContent = () => {
           height="h-[349px]"
         >
           <VolumeChart />
+        </DashboardSection>
+      </section>
+
+      <section>
+        <DashboardSection
+          title="Users Data"
+          subtitle="API Integration Table"
+          height="h-auto"
+        >
+          <UsersTable />
         </DashboardSection>
       </section>
     </div>

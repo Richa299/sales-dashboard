@@ -8,7 +8,18 @@ import StatCard from "../ui/StatCard";
 
 const SalesCards = () => {
   return (
-    <div className="flex gap-[20px]">
+    <div
+      className="
+    grid
+
+    grid-cols-1
+    sm:grid-cols-2
+    xl:grid-cols-4
+
+    gap-[16px]
+  "
+    >
+      {" "}
       <StatCard
         bgColor="bg-[#FFE2E5]"
         iconBg="bg-[#FA5A7D]"
@@ -17,7 +28,6 @@ const SalesCards = () => {
         title="Total Sales"
         growth="+8% from yesterday"
       />
-
       <StatCard
         bgColor="bg-[#FFF4DE]"
         iconBg="bg-[#FF947A]"
@@ -26,7 +36,6 @@ const SalesCards = () => {
         title="Total Order"
         growth="+5% from yesterday"
       />
-
       <StatCard
         bgColor="bg-[#DCFCE7]"
         iconBg="bg-[#3CD856]"
@@ -35,7 +44,6 @@ const SalesCards = () => {
         title="Product Sold"
         growth="+1.2% from yesterday"
       />
-
       <StatCard
         bgColor="bg-[#F3E8FF]"
         iconBg="bg-[#BF83FF]"
