@@ -25,8 +25,8 @@ const Sidebar = () => {
         items-center
       "
     >
-      <div className="flex flex-col gap-10 justify-center items-center">
-        <div className="flex gap-4 !ml-[-4rem]">
+      <div className="flex flex-col gap-10 justify-center items-center !mt-[-1rem] !p-[4rem]">
+        <div className="flex gap-4 !ml-[-3rem]">
           <div
             className="
               w-[52px]

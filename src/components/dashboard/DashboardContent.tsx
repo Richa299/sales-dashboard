@@ -11,7 +11,7 @@ import UsersTable from "./widgets/UsersTable";
 
 const DashboardContent = () => {
   return (
-    <div className="flex flex-col gap-[32px] bg-red-500 !p-[1.5rem]">
+    <div className="flex flex-col gap-[32px] !p-[1.5rem]">
       <section className="flex gap-[31px]">
         <DashboardSection
           title="Today's Sales"
