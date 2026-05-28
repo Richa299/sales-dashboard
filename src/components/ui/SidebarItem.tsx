@@ -33,7 +33,6 @@ const SidebarItem = ({ title, icon, active = false }: SidebarItemProps) => {
         <span
           className={`
             text-[22px]
-
             ${active ? "text-white" : "text-[#737791]"}
           `}
         >
@@ -43,7 +42,7 @@ const SidebarItem = ({ title, icon, active = false }: SidebarItemProps) => {
         <span
           className={`
             text-[18px]
-            font-medium
+            font-normal
 
             ${active ? "text-white" : "text-[#737791]"}
           `}

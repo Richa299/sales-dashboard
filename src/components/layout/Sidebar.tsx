@@ -7,6 +7,8 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { PiSignOut } from "react-icons/pi";
 import { FiBarChart2 } from "react-icons/fi";
 import { AiFillPieChart } from "react-icons/ai";
+import logo from "../../assets/logo.svg";
+import dabang from "../../assets/dabang.svg";
 
 const Sidebar = () => {
   return (
@@ -20,10 +22,11 @@ const Sidebar = () => {
         flex
         flex-col
         justify-between
+        items-center
       "
     >
       <div className="flex flex-col gap-10 justify-center items-center">
-        <div className="flex gap-4">
+        <div className="flex gap-4 !ml-[-4rem]">
           <div
             className="
               w-[52px]
@@ -35,10 +38,20 @@ const Sidebar = () => {
               justify-center
             "
           >
-            <span className="text-white text-xl font-bold">D</span>
+            <img
+              src={logo}
+              alt="logo"
+              className="
+    w-[24px]
+    h-[24px]
+    object-contain
+  "
+            />{" "}
           </div>
 
-          <h1 className="text-[30px] font-bold text-[#151D48]">Dabang</h1>
+          <h1 className="text-[30px] font-bold text-[#151D48] font-['Poppins']">
+            Dabang
+          </h1>
         </div>
         <nav
           className="
@@ -109,7 +122,7 @@ const Sidebar = () => {
       bg-white/10
 
       -top-[60px]
-      -left-[60px]
+      -right-[60px]
     "
         />
 
@@ -142,15 +155,23 @@ const Sidebar = () => {
         mb-5
       "
           >
-            <span className="text-[#5D5FEF] text-[24px]">💧</span>
+            <img
+              src={dabang}
+              alt="logo"
+              className="
+    w-[34px]
+    h-[34px]
+    object-contain
+  "
+            />{" "}
           </div>
 
-          <h2 className="text-[28px] font-semibold mb-2">Dabang Pro</h2>
+          <h2 className="text-[20px] font-semibold mb-2">Dabang Pro</h2>
 
           <p
             className="
         text-center
-        text-[15px]
+        text-[12px]
         text-white/80
         leading-6
         mb-7
@@ -166,12 +187,13 @@ const Sidebar = () => {
         w-[140px]
         h-[48px]
 
-        rounded-[14px]
+        rounded-[8px]
         bg-white
 
         text-[#5D5FEF]
         text-[16px]
         font-semibold
+        !mt-[1rem]
       "
           >
             Get Pro
